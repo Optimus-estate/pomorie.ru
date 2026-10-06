@@ -11,30 +11,55 @@
 body{margin:0;background:#D9E2E1;color:#1A1A1A;font-family:Inter,Arial,sans-serif}
 *{box-sizing:border-box}
 a{color:#1F4E52;text-decoration:none}
-@media (max-width:820px){body{zoom:calc(100vw / 820px)}}
+@media screen and (max-width:820px){
+  body{background:#EEF4F3}
+  .sheet{width:100%!important;min-height:0!important;margin:0!important;box-shadow:none!important}
+  .hdr{padding:12px 18px 10px!important}
+  .hdr .lo{height:44px!important}
+  .hdr .lp{width:130px!important;height:44px!important}
+  .hero{grid-template-columns:1fr!important;gap:16px!important;padding:16px 18px 0!important}
+  .badges{flex-wrap:wrap!important}
+  .h1{font-size:32px!important}
+  .sub{font-size:19px!important}
+  .heroimg{height:200px!important}
+  .mx{margin-left:18px!important;margin-right:18px!important}
+  .ph{flex-direction:column!important;align-items:flex-start!important;gap:10px!important}
+  .pt{font-size:20px!important}
+  .plan,.planimg{height:auto!important}
+  .sec{padding-left:18px!important;padding-right:18px!important}
+  .houses{grid-template-columns:1fr!important}
+  .plans{height:220px!important}
+  .gal{grid-template-columns:1fr 1fr!important;grid-auto-rows:110px;height:auto!important}
+  .ft{flex-direction:column!important;align-items:flex-start!important;padding:16px 18px!important}
+  .msgs{flex-wrap:wrap}
+  .ctc{gap:12px!important}
+}
+@media screen and (max-width:520px){
+  .blist{grid-template-columns:1fr!important;grid-template-rows:none!important;grid-auto-flow:row!important}
+}
 @media print{body{background:#FFFFFF}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
 </style>
 </head>
 <body>
-<div data-screen-label="A4" style="width:794px;min-height:1123px;margin:24px auto;background:#EEF4F3;box-shadow:0 10px 40px rgba(20,58,61,.15);display:flex;flex-direction:column;overflow:hidden">
+<div data-screen-label="A4" class="sheet" style="width:794px;min-height:1123px;margin:24px auto;background:#EEF4F3;box-shadow:0 10px 40px rgba(20,58,61,.15);display:flex;flex-direction:column;overflow:hidden">
 
-  <header style="padding:12px 36px 10px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #D5E3E1">
-    <img src="logo-optimus.png" alt="OPTIMUS ESTATE" style="height:60px;width:auto;display:block">
-    <div style="width:170px;height:60px"><img src="pomorie-logo-black.png" alt="Pomorie Luxury Village" style="width:100%;height:100%;object-fit:contain;object-position:right center;display:block"></div>
+  <header class="hdr" style="padding:12px 36px 10px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #D5E3E1">
+    <img src="logo-optimus.png" alt="OPTIMUS ESTATE" class="lo" style="height:60px;width:auto;display:block">
+    <div class="lp" style="width:170px;height:60px"><img src="pomorie-logo-black.png" alt="Pomorie Luxury Village" style="width:100%;height:100%;object-fit:contain;object-position:right center;display:block"></div>
   </header>
 
-  <section style="padding:18px 36px 0;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center">
+  <section class="hero" style="padding:18px 36px 0;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center">
     <div style="display:flex;flex-direction:column;gap:12px">
-      <div style="display:flex;gap:6px"><span style="background:#C9A24B;color:#1A1A1A;font-size:9px;font-weight:800;letter-spacing:1px;padding:4px 8px">ТОЛЬКО ДЛЯ ПАРТНЁРОВ</span><span style="border:1px solid #1F4E52;color:#1F4E52;font-size:9px;font-weight:700;letter-spacing:1px;padding:3px 7px">ПОМОРИЕ · БОЛГАРИЯ</span></div>
-      <div style="display:flex;flex-direction:column;gap:6px"><h1 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:40px;line-height:1;color:#143A3D">Pomorie Luxury Village</h1><div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:22px;font-weight:500;color:#1F4E52">Жилой комплекс премиум-класса</div></div>
+      <div class="badges" style="display:flex;gap:6px"><span style="background:#C9A24B;color:#1A1A1A;font-size:9px;font-weight:800;letter-spacing:1px;padding:4px 8px">ТОЛЬКО ДЛЯ ПАРТНЁРОВ</span><span style="border:1px solid #1F4E52;color:#1F4E52;font-size:9px;font-weight:700;letter-spacing:1px;padding:3px 7px">ПОМОРИЕ · БОЛГАРИЯ</span></div>
+      <div style="display:flex;flex-direction:column;gap:6px"><h1 class="h1" style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:40px;line-height:1;color:#143A3D">Pomorie Luxury Village</h1><div class="sub" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:22px;font-weight:500;color:#1F4E52">Жилой комплекс премиум-класса</div></div>
       <div style="align-self:flex-start;display:flex;align-items:center;gap:12px;background:#143A3D;border-radius:4px;padding:10px 16px"><span style="font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:700;line-height:1;color:#E3C77F">3%</span><span style="font-size:12px;font-weight:600;line-height:1.35;color:#FFFFFF">комиссии для партнёра<br>уже в цене</span></div>
     </div>
-    <div style="height:150px;border-radius:4px;overflow:hidden"><img src="pomorie-hero.jpg" alt="Pomorie Luxury Village" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block"></div>
+    <div class="heroimg" style="height:150px;border-radius:4px;overflow:hidden"><img src="pomorie-hero.jpg" alt="Pomorie Luxury Village" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block"></div>
   </section>
 
-  <section style="margin:12px 36px 0;padding:10px 0;border-top:1px solid #D5E3E1;border-bottom:1px solid #D5E3E1;display:flex;flex-direction:column;gap:10px">
+  <section class="mx" style="margin:12px 36px 0;padding:10px 0;border-top:1px solid #D5E3E1;border-bottom:1px solid #D5E3E1;display:flex;flex-direction:column;gap:10px">
     <div style="font-size:10px;font-weight:700;letter-spacing:1.4px;color:#1F4E52">КРАТКО О КОМПЛЕКСЕ</div>
-    <ul style="margin:0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(3,auto);grid-auto-flow:column;gap:7px 24px">
+    <ul class="blist" style="margin:0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(3,auto);grid-auto-flow:column;gap:7px 24px">
       <li style="display:flex;align-items:center;gap:10px;font-size:13.5px;font-weight:500;color:#1A1A1A"><span style="width:6px;height:6px;border-radius:50%;background:#1F4E52;flex-shrink:0"></span>Без таксы поддержки</li>
       <li style="display:flex;align-items:center;gap:10px;font-size:13.5px;font-weight:500;color:#1A1A1A"><span style="width:6px;height:6px;border-radius:50%;background:#1F4E52;flex-shrink:0"></span>10 домов</li>
       <li style="display:flex;align-items:center;gap:10px;font-size:13.5px;font-weight:500;color:#1A1A1A"><span style="width:6px;height:6px;border-radius:50%;background:#1F4E52;flex-shrink:0"></span>Вид на море из каждого дома</li>
@@ -44,23 +69,23 @@ a{color:#1F4E52;text-decoration:none}
     </ul>
   </section>
 
-  <section style="margin:14px 36px 0;display:flex;flex-direction:column;border-radius:4px;overflow:hidden;border:1px solid #1F4E52">
-    <div style="background:#1F4E52;padding:9px 16px;display:flex;justify-content:space-between;align-items:center;gap:16px">
-      <div style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:#FFFFFF">Индивидуальные цены на каждый дом</div>
+  <section class="mx" style="margin:14px 36px 0;display:flex;flex-direction:column;border-radius:4px;overflow:hidden;border:1px solid #1F4E52">
+    <div class="ph" style="background:#1F4E52;padding:9px 16px;display:flex;justify-content:space-between;align-items:center;gap:16px">
+      <div class="pt" style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:#FFFFFF">Индивидуальные цены на каждый дом</div>
       <a href="https://airtable.com/app4flQF8p47DvF7v/shrnfLx6VbdRji0tP" target="_blank" style="background:#C9A24B;color:#1A1A1A;font-size:11px;font-weight:800;letter-spacing:.6px;padding:8px 14px;border-radius:3px">ПРАЙС-ЛИСТ →</a>
     </div>
-    <div style="position:relative;height:104px;background:#FFFFFF">
-      <img src="site-plan1.jpg" alt="План расположения домов" style="width:100%;height:100%;object-fit:contain;object-position:center;display:block">
+    <div class="plan" style="position:relative;height:104px;background:#FFFFFF">
+      <img src="site-plan1.jpg" alt="План расположения домов" class="planimg" style="width:100%;height:100%;object-fit:contain;object-position:center;display:block">
     </div>
   </section>
 
-  <section style="padding:16px 36px 0;display:flex;flex-direction:column;gap:10px">
+  <section class="sec" style="padding:16px 36px 0;display:flex;flex-direction:column;gap:10px">
     <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;color:#143A3D">Два вида домов на выбор</h2>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+    <div class="houses" style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
       <article style="background:#FFFFFF;border:1px solid #D5E3E1;border-radius:4px;overflow:hidden;display:flex;flex-direction:column">
         <div style="background:#1F4E52;padding:8px 14px"><h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:#FFFFFF">Дом «Элегант»</h3></div>
         <div style="aspect-ratio:16/9"><img src="elegant-facade.jpg" alt="Дом Элегант" style="width:100%;height:100%;object-fit:cover;display:block"></div>
-        <div style="height:190px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:minmax(0,1fr);gap:1px;background:#D5E3E1;border-top:1px solid #D5E3E1">
+        <div class="plans" style="height:190px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:minmax(0,1fr);gap:1px;background:#D5E3E1;border-top:1px solid #D5E3E1">
           <div style="background:#FFFFFF;padding:8px;display:flex;flex-direction:column;gap:4px;min-height:0;min-width:0"><div style="font-size:9px;font-weight:700;letter-spacing:1px;color:#1F4E52">1 ЭТАЖ</div><div style="flex:1;min-height:0"><img src="elegant-f1.png" alt="Планировка 1 ЭТАЖ" style="width:100%;height:100%;object-fit:contain;display:block"></div></div>
           <div style="background:#FFFFFF;padding:8px;display:flex;flex-direction:column;gap:4px;min-height:0;min-width:0"><div style="font-size:9px;font-weight:700;letter-spacing:1px;color:#1F4E52">2 ЭТАЖ</div><div style="flex:1;min-height:0"><img src="elegant-f2.png" alt="Планировка 2 ЭТАЖ" style="width:100%;height:100%;object-fit:contain;display:block"></div></div>
         </div>
@@ -68,7 +93,7 @@ a{color:#1F4E52;text-decoration:none}
       <article style="background:#FFFFFF;border:1px solid #D5E3E1;border-radius:4px;overflow:hidden;display:flex;flex-direction:column">
         <div style="background:#143A3D;padding:8px 14px"><h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:#FFFFFF">Дом «Гранд»</h3></div>
         <div style="aspect-ratio:16/9"><img src="grand-facade.jpg" alt="Дом Гранд" style="width:100%;height:100%;object-fit:cover;display:block"></div>
-        <div style="height:190px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:minmax(0,1fr);gap:1px;background:#D5E3E1;border-top:1px solid #D5E3E1">
+        <div class="plans" style="height:190px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:minmax(0,1fr);gap:1px;background:#D5E3E1;border-top:1px solid #D5E3E1">
           <div style="background:#FFFFFF;padding:8px;display:flex;flex-direction:column;gap:4px;min-height:0;min-width:0"><div style="font-size:9px;font-weight:700;letter-spacing:1px;color:#1F4E52">1 ЭТАЖ</div><div style="flex:1;min-height:0"><img src="grand-f1.png" alt="Планировка 1 ЭТАЖ" style="width:100%;height:100%;object-fit:contain;display:block"></div></div>
           <div style="background:#FFFFFF;padding:8px;display:flex;flex-direction:column;gap:4px;min-height:0;min-width:0"><div style="font-size:9px;font-weight:700;letter-spacing:1px;color:#1F4E52">2 ЭТАЖ</div><div style="flex:1;min-height:0"><img src="grand-f2.png" alt="Планировка 2 ЭТАЖ" style="width:100%;height:100%;object-fit:contain;display:block"></div></div>
         </div>
@@ -76,9 +101,9 @@ a{color:#1F4E52;text-decoration:none}
     </div>
   </section>
 
-  <section style="padding:18px 36px 24px;display:flex;flex-direction:column;gap:8px">
+  <section class="sec" style="padding:18px 36px 24px;display:flex;flex-direction:column;gap:8px">
     <div style="display:flex;align-items:baseline;gap:12px"><span style="font-size:10px;font-weight:700;letter-spacing:1.4px;color:#1F4E52">ГАЛЕРЕЯ</span><span style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:#143A3D">Территория комплекса</span></div>
-    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;height:84px">
+    <div class="gal" style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;height:84px">
       <div style="border-radius:3px;overflow:hidden"><img src="gal-1.png" alt="Территория комплекса" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block"></div>
       <div style="border-radius:3px;overflow:hidden"><img src="gal-2.png" alt="Территория комплекса" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block"></div>
       <div style="border-radius:3px;overflow:hidden"><img src="gal-3.png" alt="Территория комплекса" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block"></div>
@@ -86,21 +111,21 @@ a{color:#1F4E52;text-decoration:none}
     </div>
   </section>
 
-  <footer style="background:#143A3D;padding:16px 36px;display:flex;justify-content:space-between;align-items:center;gap:16px">
+  <footer class="ft" style="background:#143A3D;padding:16px 36px;display:flex;justify-content:space-between;align-items:center;gap:16px">
     <div style="display:flex;flex-direction:column;gap:3px">
       <div style="font-size:9px;font-weight:700;letter-spacing:1.4px;color:#E3C77F">КОНТАКТ · МЕНЕДЖЕР ПО ПРОДАЖАМ</div>
       <div style="display:flex;align-items:baseline;gap:14px"><span style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;color:#FFFFFF">Добриела</span><a href="tel:+359889090078" style="font-size:17px;font-weight:600;color:#FFFFFF">088 909 0078</a></div>
     </div>
-    <div style="display:flex;gap:8px">
+    <div class="msgs" style="display:flex;gap:8px">
       <a href="https://wa.me/359889090078" target="_blank" style="display:flex;align-items:center;gap:7px;border:1px solid rgba(255,255,255,.45);border-radius:3px;padding:8px 11px;color:#FFFFFF;font-size:11px;font-weight:600"><span style="width:8px;height:8px;border-radius:50%;background:#25D366"></span>WhatsApp</a>
       <a href="viber://chat?number=%2B359889090078" style="display:flex;align-items:center;gap:7px;border:1px solid rgba(255,255,255,.45);border-radius:3px;padding:8px 11px;color:#FFFFFF;font-size:11px;font-weight:600"><span style="width:8px;height:8px;border-radius:50%;background:#7360F2"></span>Viber</a>
       <a href="https://t.me/+359889090078" target="_blank" style="display:flex;align-items:center;gap:7px;border:1px solid rgba(255,255,255,.45);border-radius:3px;padding:8px 11px;color:#FFFFFF;font-size:11px;font-weight:600"><span style="width:8px;height:8px;border-radius:50%;background:#2AABEE"></span>Telegram</a>
     </div>
   </footer>
 
-  <section style="padding:18px 36px 22px;display:flex;flex-direction:column;gap:12px">
+  <section class="sec" style="padding:18px 36px 22px;display:flex;flex-direction:column;gap:12px">
     <div style="font-size:10px;font-weight:700;letter-spacing:1.4px;color:#1F4E52">ПО ВОПРОСАМ ОСМОТРОВ И ИНФОРМАЦИИ</div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+    <div class="ctc" style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
       <div style="display:flex;flex-direction:column;gap:3px">
         <span style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:#143A3D">Александр</span>
         <a href="tel:+359877692546" style="font-size:14px;font-weight:600;color:#1F4E52">+359 87 769 25 46</a>
